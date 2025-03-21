@@ -11,6 +11,7 @@ The User-Based Recommender System is a product recommendation model based on use
 📊 Machine Learning (SVD, Collaborative Filtering)
 
 🔢 Linear Algebra (Matrix Decomposition)
+
 ## 🏗 Project Structure
 User-Based-Recommender-System/
 │── data/                    # Dataset folder
