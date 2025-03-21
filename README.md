@@ -12,16 +12,6 @@ The User-Based Recommender System is a product recommendation model based on use
 
 🔢 Linear Algebra (Matrix Decomposition)
 
-🏗 Project Structure
-
-User-Based-Recommender-System/
-│── data/                    # Dataset folder
-│── src/                     # Source code
-│   ├── preprocess.py        # Data preprocessing
-│   ├── svd_recommender.py   # SVD algorithm implementation
-│   ├── evaluate.py          # Model evaluation
-│── notebooks/               # Jupyter Notebooks for data analysis
-│── README.md                # Project documentation
 
 🔍 How It Works
 
@@ -44,38 +34,6 @@ Use Cosine Similarity to find users with similar preferences.
 
 Rank products based on ratings from similar users.
 
-🚀 How to Run the Project
-
-1️⃣ Install Dependencies
-
-pip install -r requirements.txt
-
-2️⃣ Run the Recommender Model
-
-python src/svd_recommender.py
-
-3️⃣ Check Recommendation Results
-
-python src/evaluate.py
-
-📊 Example
-
-import numpy as np
-from svd_recommender import SVDRecommender
-
-# Create a sample rating matrix
-A = np.array([
-    [5, 4, 0, 1],
-    [4, 0, 0, 1],
-    [1, 1, 0, 5],
-    [0, 0, 5, 4],
-    [0, 1, 5, 4]
-])
-
-recommender = SVDRecommender(k=2)
-recommender.fit(A)
-recommendations = recommender.recommend(user_id=2)
-print(recommendations)
 
 🏆 Results
 
